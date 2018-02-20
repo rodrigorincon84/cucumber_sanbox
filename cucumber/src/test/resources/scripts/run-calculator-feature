@@ -1,0 +1,14 @@
+#!/bin/bash -eux
+
+MAVEN=/home/clarolab/rodrigo/Desarrollo/Maven/apache-maven-3.5.0/bin/mvn
+#MAVEN_OPTIONS="clean compile verify"
+MAVEN_OPTIONS="clean test"
+TAG=@tag_scenario1
+SKIP_TAG=@tag_scenario_skip
+FEATURE=src/main/java/features
+GLUE=steps
+PLUGIN_HTML=html:target/cucumber
+PLUGIN_JSON=json:target/cucumber.json
+
+$MAVEN $MAVEN_OPTIONS -Dcucumber.options="--snippets camelcase --tags $TAG --tags ~$SKIP_TAG --glue $GLUE --plugin $PLUGIN_JSON --plugin $PLUGIN_HTML $FEATURE" \
+	#-Dlog4j2.debug

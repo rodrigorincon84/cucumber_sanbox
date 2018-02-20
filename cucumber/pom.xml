@@ -1,0 +1,132 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rodrigo</groupId>
+  <artifactId>cucumber</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>cucumber_test</name>
+  
+  <properties>
+  	<!-- Logging -->
+    <log4j2.configuration>file://${basedir}/src/main/resources/log4j2.xml</log4j2.configuration>
+  </properties>
+  
+  <dependencies>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>2.3.1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-junit</artifactId>
+	    <version>2.0.0</version>
+	    <scope>test</scope>
+	</dependency>
+		
+	<dependency>
+	    <groupId>org.hamcrest</groupId>
+	    <artifactId>java-hamcrest</artifactId>
+	    <version>2.0.0.0</version>
+	</dependency>		
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.apache.logging.log4j</groupId> -->
+<!-- 	    <artifactId>log4j-core</artifactId> -->
+<!-- 	    <version>2.10.0</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.apache.logging.log4j</groupId> -->
+<!-- 	    <artifactId>log4j-api</artifactId> -->
+<!-- 	    <version>2.10.0</version> -->
+<!-- 	</dependency>	 -->
+	
+
+  </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+            <version>3.7.0</version>
+        </plugin>
+        
+        <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.20.1</version>
+            <configuration>
+            	<testFailureIgnore>true</testFailureIgnore>
+            </configuration>			        
+        </plugin>
+        
+		<plugin>
+		    <groupId>net.masterthought</groupId>
+		    <artifactId>maven-cucumber-reporting</artifactId>
+<!-- 		    <version>3.14.0</version> -->
+			<version>3.3.0</version>
+		    <executions>
+		    	<execution>
+		    		<id>cucumber-report</id>
+		    		<phase>test</phase>
+		    		<goals>
+		    			<goal>generate</goal>
+		    		</goals>
+		    		<configuration>
+                        <projectName>cucumber-report</projectName>
+                        <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                        <!-- this parameter is deprecated, use jsonFiles instead -->
+                        <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                        <jsonFiles>
+                        	<param>sample.json</param>
+                            <param>other.json</param>
+                            <param>cucumber.json</param>
+                        </jsonFiles>
+                        <parallelTesting>false</parallelTesting>                        		    		
+		    		</configuration>
+		    	</execution>
+		    </executions>
+		    <dependencies>
+				<dependency>
+				    <groupId>org.apache.logging.log4j</groupId>
+				    <artifactId>log4j-core</artifactId>
+				    <version>2.6</version>
+				</dependency>
+				<dependency>
+				    <groupId>org.apache.logging.log4j</groupId>
+				    <artifactId>log4j-api</artifactId>
+				    <version>2.6</version>
+				</dependency>			    
+		    </dependencies>
+		</plugin>        
+		
+        <!-- Use the properties-maven-plugin to set the log4j2 system property. -->
+<!--         <plugin> -->
+<!--             <groupId>org.codehaus.mojo</groupId> -->
+<!--             <artifactId>properties-maven-plugin</artifactId> -->
+<!--              <version>1.0-0</version> -->
+<!-- 			<version>1.0-alpha-2</version> -->
+<!--             <executions> -->
+<!--                 <execution> -->
+<!--                     <goals> -->
+<!--                         <goal>set-system-properties</goal> -->
+<!--                     </goals> -->
+<!--                     <configuration> -->
+<!--                         <properties> -->
+<!--                             <property> -->
+<!--                                 <name>log4j2.configuration</name> -->
+<!--                                 <value>${log4j2.configuration}</value> -->
+<!--                             </property> -->
+<!--                         </properties> -->
+<!--                     </configuration> -->
+<!--                 </execution> -->
+<!--             </executions> -->
+<!--         </plugin> -->
+            		
+    </plugins>
+  </build>  
+</project>

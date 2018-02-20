@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cucumber.RunnerTest" time="0.282" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/test-classes:/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/classes:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-java/2.3.1/cucumber-java-2.3.1.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-core/2.3.1/cucumber-core-2.3.1.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-junit/2.0.0/cucumber-junit-2.0.0.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/junit/junit/4.12/junit-4.12.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/surefire/surefirebooter7684830658830767906.jar /home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/surefire 2018-02-20T17-56-53_742-jvmRun1 surefire4230225881799001769tmp surefire_06432416464604852793tmp"/>
+    <property name="surefire.test.class.path" value="/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/test-classes:/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/classes:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-java/2.3.1/cucumber-java-2.3.1.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-core/2.3.1/cucumber-core-2.3.1.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/io/cucumber/cucumber-junit/2.0.0/cucumber-junit-2.0.0.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/junit/junit/4.12/junit-4.12.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/clarolab/rodrigo/Desarrollo/m2_repository/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/clarolab"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre"/>
+    <property name="basedir" value="/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber/target/surefire/surefirebooter7684830658830767906.jar"/>
+    <property name="sun.boot.class.path" value="/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/resources.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/rt.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/sunrsasign.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/jsse.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/jce.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/charsets.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/jfr.jar:/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_141-b15"/>
+    <property name="user.name" value="clarolab"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="3.2.0-106-generic"/>
+    <property name="java.endorsed.dirs" value="/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/clarolab/rodrigo/Desarrollo/m2_repository"/>
+    <property name="cucumber.options" value="--snippets camelcase --tags @tag_scenario1 --tags ~@tag_scenario_skip --glue steps --plugin json:target/cucumber.json --plugin html:target/cucumber src/main/java/features"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_141"/>
+    <property name="user.dir" value="/home/clarolab/rodrigo/Desarrollo/workspace/Eclipse/Automation_repo_gerrit/cucumber"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.141-b15"/>
+    <property name="java.ext.dirs" value="/home/clarolab/rodrigo/Desarrollo/Java/jdk1.8.0_141__64b/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="Title of your scenario" classname="This is a sample feature" time="0.076"/>
+</testsuite>
