@@ -1,8 +1,10 @@
 #!/bin/bash -eux
+echo "Type the maven path location like '/home/user/maven/bin' "
+read MAVEN_PATH
 
-MAVEN=/home/clarolab/rodrigo/Desarrollo/Maven/apache-maven-3.5.0/bin/mvn
-#MAVEN_OPTIONS="clean compile verify"
-MAVEN_OPTIONS="clean test"
+MAVEN=$MAVEN_PATH/bin/mvn
+MAVEN_OPTIONS="clean compile verify"
+#MAVEN_OPTIONS="clean test"
 TAG=@tag_scenario1
 SKIP_TAG=@tag_scenario_skip
 FEATURE=src/main/java/features

@@ -26,3 +26,11 @@ Feature: This is a sample feature
     Given I have a calculator
     When I add 1 and 2
     Then The result should be 3
+    
+  @tag_scenario1
+  Scenario: Title of your scenario
+    Given I have a calculator
+    When I add 1 and 2
+    Then The result should be 4    
+    
+     
